@@ -162,3 +162,7 @@ cython_debug/
 #.idea/
 
 ffmpeg.exe
+
+*.mp3
+
+*summary.txt

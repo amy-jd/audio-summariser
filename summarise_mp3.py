@@ -6,7 +6,7 @@ import os.path
 
 def summarise_mp3(audio_file):
     file_name = os.path.splitext(audio_file)[0]
-    text_file = file_name + ".txt"
+    text_file = file_name + "_transcript.txt"
     if not os.path.exists(text_file):
         audio_transcript = transcribe_audio(audio_file)
         with open(text_file, "w") as t: 
